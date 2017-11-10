@@ -45,6 +45,8 @@ body
 	font-family: 'Arial'
 	overflow-x: hidden
 	opacity: 1
+
+.wrapper
 	background: #282828
 
 .img-responsive
@@ -55,7 +57,6 @@ body
 .mainBlock
 	background: #fff
 	max-width: 490px
-	height: 900px
 	padding: 20px
 	margin: 0 auto
 	position: relative
@@ -116,6 +117,7 @@ body
 			  box-sizing: border-box
 			  height: 25px
 			  margin-top: 2px
+			  font-size: 13px
 			  &:first-child
 			  	margin-top: 0
 
@@ -128,7 +130,7 @@ body
 				&:before
 					content: 'Ручное бронирование'
 					position: absolute
-					top: 3px
+					top: 5px
 					left: 5px
 					white-space: nowrap
 			.pr2
@@ -140,7 +142,7 @@ body
 				&:before
 					content: 'Пакетные туры'
 					position: absolute
-					top: 3px
+					top: 5px
 					left: 5px
 					white-space: nowrap
 			.pr3
@@ -152,7 +154,7 @@ body
 				&:before
 					content: 'Отели'
 					position: absolute
-					top: 3px
+					top: 5px
 					left: 5px
 					white-space: nowrap
 
@@ -170,7 +172,60 @@ body
 		width: 100%
 		justify-content: space-between
 		font-size: 16px
-		padding-right: 45px
+		padding-right: 42px
+		margin-top: 10px
+	
+.lastFeedback
+	width: 100%
+	&__topLine
+		display: flex
+		justify-content: space-start
+		align-items: baseline
+		h3
+			font-size: 16px
+		a 
+			font-size: 14px
+			text-decoration: underline
+			margin-left: 10px
+		.synopsis
+			margin-left: 20%
+			span
+				margin-left: 20px
+				font-size: 12px
+				.fa 
+					color: #73b4d5
+					font-size: 12px
+					text-shadow: 0 1px #507e95
+					margin-right: 5px
 
+	&__field
+		width: 100%
+		&-comment
+			.userName
+				display: flex
+				justify-content: flex-start
+				align-items: baseline
+				h4
+					margin-right: 5px
+					margin-top: 0
+					margin-bottom: 10px
+				.date
+					font-size: 11px
+					color: #808080
+			.bodyComment
+				padding: 15px
+				background-color: #f2fbff
+				border: 1px solid #cecabf
+				box-shadow: 0 2px 5px rgba(0,0,0, .05)
+				position: relative
+				margin-bottom: 15px
+				&:before
+					content: ''
+					position: absolute
+					width: 9px
+					height: 10px
+					background: url(../img/corner.png)
+					top: -10px
+					left: 23px
 
 @import "media" // Всегда в конце
