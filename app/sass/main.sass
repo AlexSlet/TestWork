@@ -60,6 +60,7 @@ body
 	padding: 20px
 	margin: 0 auto
 	position: relative
+	transition: all 1s
 .topLine
 	width: 81%
 	margin-left: 19%
@@ -80,13 +81,12 @@ body
 		border: 1px solid #cecabf
 		border-radius: 5px
 	&__img
-		width: 120px
-		height: 120px
-		border-radius: 50%
-		background: url(../img/manager-img.jpg)
 		position: absolute
 		top: 20px
 		left: 20px
+		transition: all 1s
+		img
+			border-radius: 50%
 
 .services
 	width: 70%
@@ -179,7 +179,7 @@ body
 	width: 100%
 	&__topLine
 		display: flex
-		justify-content: space-start
+		justify-content: flex-start
 		align-items: baseline
 		h3
 			font-size: 16px
